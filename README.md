@@ -192,7 +192,7 @@ class TestHammingDistance(unittest.TestCase):
         result = SimHashService.hamming_distance("110", 110)
         self.assertEqual(result, -1)
 ```
-结果截图：
+
 ![](https://img2024.cnblogs.com/blog/3511776/202409/3511776-20240912213402369-1812791299.png)
 
 
