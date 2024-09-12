@@ -28,7 +28,10 @@
 
 # 二、计算模块的设计与实现
 ## 1、总体设计
-流程图
+### 目录文件
+![image](https://github.com/user-attachments/assets/871bba75-9384-42f2-86ec-6a44f9500ef5)
+
+### 流程图
 ![](https://img2024.cnblogs.com/blog/3511776/202409/3511776-20240912201120955-1015168063.png)
 
 ## 2、详细设计
