@@ -2,7 +2,7 @@
 | ------ | ------ |
 | 这个作业要求在哪里 | [作业要求的链接](https://edu.cnblogs.com/campus/gdgy/CSGrade22-12/homework/13220) |
 | 这个作业的目标 | 实现论文查重算法，并对代码进行性能分析、单元测试，使用PSP表 |
-#[GitHub链接](https://github.com/LHH778/3122004446)
+[GitHub链接](https://github.com/LHH778/3122004446)
 
 # 一、PSP表
 | PSP2.1                                | Personal Software Process Stages      | 预估耗时(分钟) | 实际耗时(分钟) |
