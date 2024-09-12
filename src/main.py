@@ -82,7 +82,7 @@ class SimHashService:
                 if re.match(r'[\W]+', word):
                     continue
 
-                # 计算每个词的哈希值和权重
+                # 过滤标点符号或无效字符
                 word_hash = SimHashService.get_word_hash(word)
                 word_weight = SimHashService.get_word_weight(word)
                 if word_weight == 0:
