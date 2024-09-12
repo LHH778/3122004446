@@ -13,13 +13,12 @@ BIGINT_2E64M1 = (BIGINT_2 ** 64) - BIGINT_1
 # SimHash服务类
 class SimHashService:
     @staticmethod
-    @profile
+    # @profile
     def get(text):
         if text is None:
             return None
 
         # 数据预处理
-        # text = SimHashService.preprocess_data(text)
         sum_weight = 0
         max_weight = 0
         bits = [0] * 64
@@ -60,28 +59,6 @@ class SimHashService:
                 sim_hash_builder.append("0")
 
         return ''.join(sim_hash_builder)
-
-    # @staticmethod
-    # def preprocess_data(text_content):
-    #     if not text_content:
-    #         return text_content
-    #     text_content = SimHashService.to_dbc(text_content)
-    #     text_content = re.sub(r'<.*?>', '', text_content)  # 去除HTML标签
-    #     text_content = re.sub(r'[^\u4e00-\u9fa5]', '', text_content)  # 只保留中文字符
-    #     return text_content
-    #
-    # @staticmethod
-    # def to_dbc(input_str):
-    #     """全角转半角"""
-    #     result = []
-    #     for char in input_str:
-    #         code = ord(char)
-    #         if code == 12288:  # 全角空格
-    #             code = 32
-    #         elif 65281 <= code <= 65374:  # 全角字符 (其他字符按此范围转换)
-    #             code -= 65248
-    #         result.append(chr(code))
-    #     return ''.join(result)
 
     @staticmethod
     def get_word_hash(word):

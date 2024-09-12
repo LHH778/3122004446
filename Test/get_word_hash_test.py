@@ -1,7 +1,10 @@
 import unittest
-from ..simhash_service import SimHashService
-from ..similarity_checker import SimilarityChecker
-from ..data_preprocessing import DataPreprocessing
+from src.simhash_service import SimHashService
+
+import coverage
+cov = coverage.coverage()
+cov.start()
+
 
 # 定义一些大整数
 BIGINT_0 = 0
@@ -55,3 +58,9 @@ class TestGetWordHash(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+cov.stop()
+cov.save()
+# 命令行模式展示结果
+cov.report()
+# 生成HTML覆盖率报告
+# cov.html_report(directory='result_html2')

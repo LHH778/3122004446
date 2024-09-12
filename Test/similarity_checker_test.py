@@ -1,6 +1,6 @@
 import unittest
-from similarity_checker import SimilarityChecker
-from simhash_service import SimHashService
+from src.similarity_checker import SimilarityChecker
+from src.simhash_service import SimHashService
 
 class TestSimilarityChecker(unittest.TestCase):
 

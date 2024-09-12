@@ -1,5 +1,5 @@
 import unittest
-from simhash_service import SimHashService
+from src.simhash_service import SimHashService
 
 
 class TestSimHashService(unittest.TestCase):
